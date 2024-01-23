@@ -115,7 +115,7 @@ word_list = [
     'prayerful',
     'anointed',
     'paraclete',
-    'devotional',
+    'devotional', 
     'sabbath',
     'liturgy',
     'exhortation',

@@ -1,8 +1,9 @@
 import random
-import hangmanintro
-import wordlist
-import stages
+
 from colorama import init, Fore
+from hangmanintro import hintro
+from wordlist import word_list
+import stages
 
 # Initialize colorama
 init(autoreset=True)
