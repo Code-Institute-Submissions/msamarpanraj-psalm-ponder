@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <style>
-        body 
-    {
-        background: url("https://raw.githubusercontent.com/msamarpanraj/psalm-ponder/main/views/img/psalmponder-background-image.webp") no-repeat center / cover;
-        font-family: Arial;
-        margin: 0;
-        width: 100vw;
-        height: 100vh
-    }
-    </style>
-</head>
 <body>
-    <button onclick="window.location.reload()">Run Program</button>
-    <div id="terminal"></div>
 
+    <div class="wrapper">
+
+
+        <button onclick="window.location.reload()">Run Program</button>
+        <div id="terminal"></div>
+    </div>
     <script>
         var term = new Terminal({
             cols: 80,
@@ -38,5 +28,5 @@
         // Set focus in the terminal
         document.getElementsByClassName("xterm-helper-textarea")[0].focus();
     </script>
+
 </body>
-</html>
