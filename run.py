@@ -117,7 +117,7 @@ while True:
         print("If you guess the word correctly, you win!")
 
     elif choice == '3':
-        print(Fore.CYAN + "Exiting the game. Goodbye, {}!".format(user_name))
+        print(Fore.YELLOW + "Exiting the game. Goodbye, {}!".format(user_name))
         break
 
     else:
