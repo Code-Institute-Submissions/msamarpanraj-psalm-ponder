@@ -279,7 +279,56 @@ Confirmed that the game flow adhered to the described logic.
 - [PEP8 Online](https://pep8ci.herokuapp.com/) - used to validate all the Python code
 
 
+## Deployment 
 
+This website was constructed in Codeanywhere/VScode and deployed on [Heroku](https://id.heroku.com/login)
+
+### Activating your Heroku Student pack
+
+* [Heroku-Github Student Pack](https://www.heroku.com/github-students)
+* Click "Get the student offer"
+* Login with Heroku if necessary
+* Click "Verify with GitHub"
+* Click "Authorize heroku"
+* In order to receive the Heroku credits, payment details are required.
+* In the new tab, click "Add credit card".
+* Enter your payment details as requested and then head back to the Heroku sign up process
+* Enter your details, ensuring to put "Code Institute" as your School name, heed the warning and then click "Send"
+* Read Heroku's terms and click "Agree" to continue
+* A thank you message will be shown, indicating that it can take up to 24 hours for the request to be processed
+
+### Adding an App to Heroku
+
+* On the main page of your heroku account, select the NEW tab
+* Then select Create New app
+* Add an Application name
+* On a new page, Select github as your deployment method and select connect to GitHub
+* Select the Repository, you would like to host on Heroku
+* Once the Repository is connected, you either choose Automatic deploy or manually deploy branch.
+
+### How to run this project locally
+
+To clone this project from GitHub
+
+1. Follow this link to the [Project GitHub repository](https://psalm-ponder-3ea323cf5eda.herokuapp.com/)
+2. Under the repository name, click "Clone or download".
+3. In the Clone with HTTPS section, copy the clone URL for the repository.
+4. In your local IDE open Git Bash.
+5. Change the current working directory to the location you want the cloned directory to be made.
+6. Type ` git clone ` and then press the URL you copied in Step 3
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
 
 ## Credits 
 ### Resources Used
