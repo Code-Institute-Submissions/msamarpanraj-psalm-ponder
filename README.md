@@ -97,3 +97,32 @@ A flow diagram of the logic behind the game was created using [Whimsical](https:
 
 ![Flow diagram](docs/img/game-flow.jpg)
 For PDF version [click here](docs/game-flow.pdf)
+
+## Features
+
+### Title and Introduction Section
+
+Start screen of the application consists of ASCII logo which was created using patorjk.com, and the welcome message.
+There is also a user name input field which has strong data validation. The user must enter a username consisting of letters only. They cannot just enter a blank space. If they do not enter valid data, an error message will appear in red saying "Invalid name. Please enter a valid name with only letters." 
+
+![welcome-screen](docs/img/welcome-screen.jpg)
+
+### Options menu
+
+![options-screen](docs/img/options-screen.jpg)
+
+The game offers a menu with options to start a new game, view instructions, and exit.
+The user has to choose between 1 and 3, if user enter other than that they will see error message "Invalid choice"
+![options-screen](docs/img/options-screen-invalid.jpg)
+
+### Instructions
+
+![options-screen](docs/img/instructions.jpg)
+
+Clear and concise instructions are provided for users to understand how to play the PsalmPonder Hangman game.
+
+### Game Features
+![options-screen](docs/img/start-game-screen.jpg)
+
+The user is shown with a word with blanks and the user has to guess the word. A clear message shows how many letters the word is which makes easy for the user to guess the word.
+User has to enter only letters and if user enters any other characters or numbers they will see error message "Invalid input."

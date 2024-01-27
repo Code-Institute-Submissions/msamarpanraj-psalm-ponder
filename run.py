@@ -45,7 +45,7 @@ def get_single_letter_input(incorrect_guesses):
             else:
                 print(Fore.RED + f"\nYou already guessed the letter '{user_input}' and it was incorrect. Try a different one.")
         else:
-            print(Fore.RED + "\nInvalid input. Please enter a single letter.")
+            print(Fore.RED + "\nInvalid input.")
 
 # Display welcome message and get user's name
 display_welcome()
