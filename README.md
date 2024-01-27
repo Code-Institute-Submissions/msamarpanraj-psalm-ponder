@@ -113,16 +113,55 @@ There is also a user name input field which has strong data validation. The user
 
 The game offers a menu with options to start a new game, view instructions, and exit.
 The user has to choose between 1 and 3, if user enter other than that they will see error message "Invalid choice"
-![options-screen](docs/img/options-screen-invalid.jpg)
+![invalid-screen](docs/img/options-screen-invalid.jpg)
 
 ### Instructions
 
-![options-screen](docs/img/instructions.jpg)
+![instructions-screen](docs/img/instructions.jpg)
 
 Clear and concise instructions are provided for users to understand how to play the PsalmPonder Hangman game.
 
 ### Game Features
-![options-screen](docs/img/start-game-screen.jpg)
+![start-game-screen](docs/img/start-game-screen.jpg)
 
 The user is shown with a word with blanks and the user has to guess the word. A clear message shows how many letters the word is which makes easy for the user to guess the word.
 User has to enter only letters and if user enters any other characters or numbers they will see error message "Invalid input."
+![guess-letter-screen](docs/img/guess-letter-error.jpg)
+
+### Random Word Selection:
+
+The game selects a random word from a predefined list for variety and unpredictability.
+
+### Colorama Integration:
+![wrongguess-screen](docs/img/wrong-letter.jpg)
+Colorama library is used to enhance the visual appeal of the game through colored text.
+
+### Wrong guess
+![wrongguess-screen](docs/img/wrong-letter.jpg)
+
+The user is shown with a word with blanks and the user has to guess the word. If the user guesses a wrong word he will see error message "Sorry, 'letter-entered' is not in the word. You lose a life.
+
+### Attempts Left And Hangman Figure with Emoji
+![attemptsleft-screen](docs/img/attempts-left.jpg)
+The user is shown number of attempts left for each guess as well as incorrect guesses are visually represented by a hangman figure through ASCII art with an emoji in it.
+
+### Correct Guess
+![correctguess-screen](docs/img/correct-guess.jpg)
+The user is shown with the message "Correct guess! 'letter-guessed' is in the word." and then the letter matches maximum number of times repeated in the word.
+
+### Already Guessed
+![alreadyguessed-screen](docs/img/already-guessed.jpg)
+If the user tries to enter the already guessed correct letter again he will see a warning message "You already guessed all occurrences of the letter 'e'. Try a different one."
+
+![alreadyguessincorrect-screen](docs/img/already-guessed-incorrect.jpg)
+If the user tries to enter the already guessed incorrect letter again he will see a warning message "You already guessed the letter 's' and it was incorrect. Try a different one."
+
+### Game Lost
+![gamelost-screen](docs/img/game-lost.jpg)
+If the user lost the game he will see the message "You lost the game. Better luck next time." along with the "Your word was actual-word"
+
+### Game Restart
+![gamelost-screen](docs/img/game-lost.jpg)
+Users have the option to restart the game after completing a round. Users can choose to restart the game for another round or exit the game altogether.
+
+
