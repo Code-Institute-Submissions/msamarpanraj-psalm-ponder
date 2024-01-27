@@ -88,3 +88,12 @@ Terminal outputs are displayed in high-contrast colours over black background fo
 
 Starting screen of the app:
 ![terminal](docs/img/terminal-image.png)
+
+# Logic and features
+
+## Python Logic
+
+A flow diagram of the logic behind the game was created using [Whimsical](https://whimsical.com/).
+
+![Flow diagram](docs/img/game-flow.jpg)
+For PDF version [click here](docs/game-flow.pdf)
