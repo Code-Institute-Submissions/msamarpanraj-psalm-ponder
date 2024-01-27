@@ -164,4 +164,31 @@ If the user lost the game he will see the message "You lost the game. Better luc
 ![gamelost-screen](docs/img/game-lost.jpg)
 Users have the option to restart the game after completing a round. Users can choose to restart the game for another round or exit the game altogether.
 
+## Testing
 
+### PEP8 Testing
+The python files have all been passed through [PEP8 Online](https://pep8ci.herokuapp.com/). All python files were checked with no errors reported. See screen show below:
+
+<details>
+  <summary>run.py</summary>
+
+  ![Run](docs/img/runpy.jpg)
+</details>
+
+<details>
+  <summary>wordlist.py</summary>
+
+  ![Wordlist](docs/img/wordlist.jpg)
+</details>
+
+<details>
+  <summary>stages.py</summary>
+
+  ![stages](docs/img/stages.jpg)
+</details>
+
+<details>
+  <summary>hangmanintro.py</summary>
+
+  ![Hangmanintro](docs/img/hangmanintro.jpg)
+</details>
