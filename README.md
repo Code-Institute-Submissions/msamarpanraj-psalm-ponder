@@ -192,3 +192,73 @@ The python files have all been passed through [PEP8 Online](https://pep8ci.herok
 
   ![Hangmanintro](docs/img/hangmanintro.jpg)
 </details>
+
+## Manual Testing
+### User Name Input:
+
+Entered my name when prompted.
+Checked that the input validation allowed only alphabetic characters for the name.
+Main Menu:
+
+Selected option 1 to start the game.
+Verified that the game setup occurred, and a word was selected from the word list.
+
+### Game Display:
+
+Checked that the game displayed the initial word with underscores representing each letter.
+Verified that the correct number of blanks was shown.
+
+### Letter Guessing:
+
+Entered a single letter as instructed.
+Ensured that the game handled invalid inputs appropriately and prompted for a valid single letter.
+
+### Correct Guess:
+
+Guessed a letter that was in the word.
+Verified that the correct letter was revealed in the word and displayed as a correct guess.
+Checked that the number of attempts and the hangman stages were updated accordingly.
+
+### Incorrect Guess:
+
+Guessed a letter that was not in the word.
+Confirmed that a life was deducted, and the incorrect letter was displayed.
+Checked that the number of attempts and the hangman stages were updated accordingly.
+
+### Winning the Game:
+
+Continued guessing letters until the word was completed.
+Verified that the game congratulated me on winning and displayed the correct word.
+Losing the Game:
+
+Intentionally guessed incorrect letters until running out of lives.
+Confirmed that the game ended, displaying a message indicating loss and revealing the correct word.
+
+### Restarting the Game:
+
+Chose option 1 to restart the game.
+Verified that the game reset, allowing me to play again.
+Instructions Menu:
+
+Chose option 2 to view instructions.
+Checked that the game instructions were displayed correctly.
+
+### Exiting the Game:
+
+Chose option 3 to exit the game.
+Verified that the game exited gracefully, displaying a farewell message.
+
+### Invalid Choices:
+
+Entered invalid choices at various points.
+Checked that the game handled them appropriately, providing feedback.
+
+### Dependencies and Environment:
+
+Confirmed that the game worked correctly in the specified Python environment.
+Checked that the required dependencies (colorama) were correctly installed.
+
+### Overall Functionality:
+
+Tested various scenarios to ensure the overall functionality and stability of the game.
+Confirmed that the game flow adhered to the described logic.
