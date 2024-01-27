@@ -7,14 +7,17 @@ import stages
 # Initialize colorama
 init(autoreset=True)
 
+
 def display_welcome():
     print(hangmanintro.hintro[0])
+
 
 def display_instructions():
     print(Fore.RESET)
     print("1. Start the game")
     print("2. Instructions")
     print("3. Exit the game")
+
 
 def restart_game():
     while True:
@@ -23,18 +26,24 @@ def restart_game():
         print("2. No")
         choice = input("\nEnter your choice (1 or 2): ")
 
-        if choice == '1' or choice == '2':
-            return choice == '1'
+        if choice == "1" or choice == "2":
+            return choice == "1"
         else:
             print(Fore.RED + "Invalid choice. Please enter either 1 or 2.")
+
 
 def get_user_name():
     while True:
         user_name = input(Fore.CYAN + "\nEnter your name: ")
-        if user_name.isalpha():  # Check if the input contains only alphabetic characters
+        if user_name.isalpha():  # Check alphabetic characters
             return user_name
         else:
-            print(Fore.RED + "Invalid name. Please enter a valid name with only letters.")
+            print(
+                Fore.RED
+                + "Invalid name. \
+            Please enter a valid name with only letters."
+            )
+
 
 def get_single_letter_input(incorrect_guesses):
     while True:
@@ -43,29 +52,44 @@ def get_single_letter_input(incorrect_guesses):
             if user_input not in incorrect_guesses:
                 return user_input
             else:
-                print(Fore.RED + f"\nYou already guessed the letter '{user_input}' and it was incorrect. Try a different one.")
+                print(
+                    Fore.RED
+                    + f"\nYou already guessed the letter\
+                '{user_input}' and it was incorrect. Try a different one."
+                )
         else:
             print(Fore.RED + "\nInvalid input.")
 
+
 # Display welcome message and get user's name
+
+
 display_welcome()
 user_name = get_user_name()
 
-show_instructions = True  # Flag to control whether to display instructions and choices
+show_instructions = True  # Flag to control to display instructions and choices
 first_time_play = True  # Flag to check if it's the first time playing
 
 while True:
     if show_instructions:
         display_instructions()
-        choice = input(Fore.CYAN + f"\nHello {user_name}! Enter your choice (1, 2, or 3): ")
+        choice = input(
+            Fore.CYAN
+            + f"\nHello {user_name}! \
+        Enter your choice (1, 2, or 3): "
+        )
     else:
-        choice = '1'  # Automatically start the game without displaying choices
+        choice = "1"  # Automatically start the game without displaying choices
 
-    if choice == '1':
+    if choice == "1":
         if first_time_play:
             print(Fore.YELLOW + f"\nLet's start the game, {user_name}!\n")
         else:
-            print(Fore.YELLOW + f"\nRestarting the game, {user_name}. Let's go!\n")
+            print(
+                Fore.YELLOW
+                + f"\nRestarting the game, {user_name}. \
+            Let's go!\n"
+            )
 
         # Game setup
         list_length = len(wordlist.word_list)
@@ -77,7 +101,13 @@ while True:
         correct_guesses = {char: 0 for char in set(hangman_word)}
         incorrect_guesses = set()
 
-        print(Fore.YELLOW + "Below is a word which has {} blanks to fill in.\n".format(hangman_word_blank.count("_")))
+        print(
+            Fore.YELLOW
+            + "Below is a word which has {} blanks \
+        to fill in.\n".format(
+                hangman_word_blank.count("_")
+            )
+        )
         print(hangman_word_blank)
 
         z = 0
@@ -92,22 +122,34 @@ while True:
                         if char == user_input:
                             hangman_word_blank[i] = user_input
                             correct_guesses[user_input] += 1
-                    print(Fore.GREEN + f"\nCorrect guess! '{user_input}' is in the word.")
+                    print(
+                        Fore.GREEN + f"\nCorrect guess! '{user_input}' \
+                        is in the word."
+                    )
                 else:
-                    print(Fore.YELLOW + f"\nYou already guessed all occurrences of the letter '{user_input}'. Try a different one.")
+                    print(
+                        Fore.YELLOW
+                        + f"\nYou already guessed all occurrences of \
+                        the letter '{user_input}'. Try a different one."
+                    )
             else:
-                print(Fore.RED + f"\nSorry, '{user_input}' is not in the word. You lose a life.")
+                print(
+                    Fore.RED
+                    + f"\nSorry, '{user_input}' is not in the word. \
+                    You lose a life."
+                )
                 life -= 1
                 incorrect_guesses.add(user_input)
                 print(Fore.YELLOW + f"Attempts left: {life}")
                 print(stages.stages_ascii[life])
 
                 if life == 0:
-                    print(Fore.RED + "\nYou lost the game. Better luck next time.")
+                    print(Fore.RED + "\nYou lost the game. \
+                    Better luck next time.")
                     print("\nYour word was", format(word))
                     break
 
-            print(hangman_word_blank)  # Move the printing outside the if-else block
+            print(hangman_word_blank)  # Move printing outside if-else block
 
             if set(hangman_word_blank) == set(hangman_word):
                 print(Fore.GREEN + "\nCongratulations! You've Won")
@@ -119,22 +161,27 @@ while True:
         first_time_play = False  # Update the flag after the first play
 
         if restart_game():
-            show_instructions = False  # Do not display instructions and choices on restart
+            show_instructions = (
+                False  # Do not display instructions and choices on restart
+            )
             continue
         else:
             print(Fore.YELLOW + "Exiting the game. Goodbye!")
             break
 
-    elif choice == '2':
+    elif choice == "2":
         print(Fore.CYAN + "\nInstructions:")
-        print("> This is a Hangman game. You need to guess the word by entering letters.")
+        print(
+            "> This is a Hangman game. \
+            You need to guess the word by entering letters."
+        )
         print("> You have 7 lives. For each incorrect guess, you lose a life.")
         print("> If you lose all your lives, the game ends.")
         print("> If you guess the word correctly, you win!")
         print(" ----------------------------------------- ")
         show_instructions = True  # Display instructions and choices again
 
-    elif choice == '3':
+    elif choice == "3":
         print(Fore.YELLOW + "Exiting the game. Goodbye, {}!".format(user_name))
         break
 
