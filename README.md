@@ -198,7 +198,8 @@ The python files have all been passed through [PEP8 Online](https://pep8ci.herok
 
 Entered my name when prompted.
 Checked that the input validation allowed only alphabetic characters for the name.
-Main Menu:
+
+### Main Menu:
 
 Selected option 1 to start the game.
 Verified that the game setup occurred, and a word was selected from the word list.
@@ -262,3 +263,31 @@ Checked that the required dependencies (colorama) were correctly installed.
 
 Tested various scenarios to ensure the overall functionality and stability of the game.
 Confirmed that the game flow adhered to the described logic.
+
+## Libraries and Technologies Used
+
+### Python Libraries:
+
+- [random](https://docs.python.org/3/library/random.html?highlight=random#module-random) - `random.choice` is used to select a random word for the game from a text file.
+- [colorama](https://pypi.org/project/colorama/) - for adding colour to terminal text.
+
+### Programs Used
+
+- [GitHub](https://github.com/) - used for version control.
+- [Heroku](https://dashboard.heroku.com/apps) -  used to deploy the live project.
+- [Whimcical](https://whimsical.com/) -  used to create the game flowchart
+- [PEP8 Online](https://pep8ci.herokuapp.com/) - used to validate all the Python code
+
+
+
+
+## Credits 
+### Resources Used
+
+- [Patorjk](https://patorjk.com/) - I used this for ASCII art.
+- [Unsplash](https://unsplash.com/) - used to download free background image
+
+
+## Acknowledgments
+
+The Code Institute slack community for their quick responses and very helpful feedback!
