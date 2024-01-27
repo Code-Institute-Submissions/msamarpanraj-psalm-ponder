@@ -77,3 +77,14 @@ As the creator and owner of PsalmPonder, I aim to:
 - See the option to exit the game when I'm done playing.
 - The game to be enjoyable and provide a challenging experience.
 
+#   User Experience (UX)
+##  Colour Scheme
+
+Colour palette was selected using <b>coolors.co</b> generator and has been extracted from the backgroud picture used in terminal view HTML page. Colour of the "run program" button was adjusted to pass the web accessibility score.
+
+![Colour Scheme](docs/img/colors.png)
+
+Terminal outputs are displayed in high-contrast colours over black background for better readability and accesibillity. Different colors used for different user inputs and game outputs. Emojis are used in the hangman display to improve the user experience.
+
+Starting screen of the app:
+![terminal](docs/img/terminal-image.png)
